@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/spring?autoReconnect=true&amp;useSSL=false
+server:
+  tomcat:
+    remote-ip-header: x_forwarded_for
+    protocol-header: x-forwarded-proto
+    port-header: X-Forwarded-Port
+  use-forward-headers: true
+  address: 127.0.0.1  #8080端口只能被本机访问
+
